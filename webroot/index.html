@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Group 9 Tech Evaluation</title>
+
+	<link id="reset-css" href="css/reset.css" rel="stylesheet" type="text/css">
+	<link id="jQuery-ui-css" href="css/jquery-ui.css" rel="stylesheet" type="text/css">
+  <link id="theme-css" href="themes/base/jquery-ui.theme.css" rel="stylesheet" type="text/css">
+	<link id="base-css" href="css/style.css" rel="stylesheet" type="text/css">
+
+	<script src="js/jquery.js"></script>
+  <script src="js/jquery-ui.js"></script>
+	<script src="js/jquery.rotate.js"></script>
+	<script src="js/script.js"></script>
+</head>
+<body>
+<div id="splash">
+	<img id="jquery-logo" src="imgs/jquery_logo.png" alt="jQuery logo" />
+	<img id="jquery-ui-logo" src="imgs/jquery_ui_logo.png" alt="jQuery UI logo" />
+</div>
+
+<div id="nav">
+	<h1>Wallpaper Gallery</h1>
+    <div id="theme-button">
+				<button id="base" class="theme-updater">Base</button>
+				<button id="blitzer" class="theme-updater">Blitzer</button>
+				<button id="flick" class="theme-updater">Flick</button>
+				<button id="hot_sneaks" class="theme-updater">Hot Sneaks</button>
+				<button id="redmond" class="theme-updater">Redmond</button>
+				<button id="smoothness" class="theme-updater">Smoothness</button>
+    </div>
+
+		<a href="#" id="download-tooltip" class="tooltip" title="Sign up to download these HD wallpapers and more!">
+    	<div id="help" class="ui-widget ui-state-default ui-corner-all wide-button">Download Wallpapers</div>
+		</a>
+</div>
+
+<div id="filter"></div>
+<div id="main-container"></div>
+<div id="form_dialog" title="Download Wallpapers">
+	<form action="#" method="post" id="my-form" class="ui-corner-all">
+		<!-- Tabbed Content -->
+		<div id="tabs">
+			<ul>
+				<li><a href="#tabs-1">1 - Personal Details</a></li>
+				<li><a href="#tabs-2" class="ui-tabs-active ui-states-active">2 - Verification</a></li>
+			</ul>
+
+			<!-- Tab 1 -->
+			<div id="tabs-1">
+				<div>
+				<label for="name">Name</label>
+				<input type="text" name="name" id="name" />
+			</div>
+			<div>
+				<label for="datepicker">Birthday</label>
+				<input type="text" id="datepicker" placeholder="Click to select date">
+			</div>
+			<div>
+				<label for="address">Street Address</label>
+				<input type="text" name="address" id="address" />
+			</div>
+			<div>
+				<label for="city">City</label>
+				<input type="text" name="city" id="city" />
+			</div>
+			<div>
+				<label for="province" id="stupid-label">Province</label>
+				<select name="province" id="province">
+					<option>Alberta</option>
+					<option>British Columbia</option>
+					<option>Manitoba</option>
+					<option>New Brunswick</option>
+					<option>Newfoundland and Labrador</option>
+					<option>Nova Scotia</option>
+					<option>Manitoba</option>
+					<option>Ontario</option>
+					<option>Prince Edward Island</option>
+					<option>Quebec</option>
+					<option>Saskatchewan</option>
+				</select>
+			</div>
+
+				<hr>
+
+				<input id="Next-btn" type="submit" name="next" value="Next" class="ui-button ui-corner-all" />
+			</div>
+
+			<!-- Tab 2 -->
+			<div id="tabs-2">
+				<div class="ui-widget">
+					<div class="ui-state-highlight ui-corner-all" style="margin-top: 20px; padding: 0 .7em;">
+						<p>
+							<span class="ui-icon ui-icon-info" style="float: left; margin-right: .3em;"></span>
+							Captcha: Sort the images to create a complete picture.
+						</p>
+					</div>
+				</div>
+
+				<ul id="captcha">
+				  <li class="ui-state-default"><img src="imgs/captcha/1.png" alt="captcha" /></li>
+					<li class="ui-state-default"><img src="imgs/captcha/4.png" alt="captcha" /></li>
+					<li class="ui-state-default"><img src="imgs/captcha/2.png" alt="captcha" /></li>
+					<li class="ui-state-default"><img src="imgs/captcha/9.png" alt="captcha" /></li>
+					<li class="ui-state-default"><img src="imgs/captcha/7.png" alt="captcha" /></li>
+					<li class="ui-state-default"><img src="imgs/captcha/3.png" alt="captcha" /></li>
+					<li class="ui-state-default"><img src="imgs/captcha/6.png" alt="captcha" /></li>
+					<li class="ui-state-default"><img src="imgs/captcha/8.png" alt="captcha" /></li>
+					<li class="ui-state-default"><img src="imgs/captcha/5.png" alt="captcha" /></li>
+				</ul>
+
+				<hr>
+
+				<input id="Submit-btn" type="submit" name="submit" value="Download Wallpapers" class="ui-button ui-corner-all" />
+			</div>
+		</div>
+	</form>
+
+	<button id="info-button" class="ui-state-default ui-corner-all">Who made this?</button>
+</div>
+
+<!-- <a href="#" id="footer-tooltip" class="tooltip" title="Move the wallpapers around to change the order"></a> -->
+	<div id="footer">
+		<div id="scroll-left" class="ui-widget ui-state-default ui-corner-all scroll-button"><span class="ui-icon ui-icon-caret-1-w"></span></div>
+		<div id="scroll-right" class="ui-widget ui-state-default ui-corner-all scroll-button"><span class="ui-icon ui-icon-caret-1-e"></span></div>
+		<div id="mask">
+		    <ol>
+		        <li class="thumbnail" order="1"></li>
+						<li class="thumbnail" order="2"></li>
+						<li class="thumbnail" order="3"></li>
+						<li class="thumbnail" order="4"></li>
+						<li class="thumbnail" order="5"></li>
+						<li class="thumbnail" order="6"></li>
+						<li class="thumbnail" order="7"></li>
+						<li class="thumbnail" order="8"></li>
+						<li class="thumbnail" order="9"></li>
+						<li class="thumbnail" order="10"></li>
+						<li class="thumbnail" order="11"></li>
+						<li class="thumbnail" order="12"></li>
+						<li class="thumbnail" order="13"></li>
+						<li class="thumbnail" order="14"></li>
+						<li class="thumbnail" order="15"></li>
+		    </ol>
+		</div>
+	</div>
+<!-- </a> -->
+</body>
+</html>

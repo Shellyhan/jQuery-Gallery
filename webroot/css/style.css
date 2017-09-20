@@ -1,0 +1,240 @@
+body, html {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+
+h1 {
+	font-family: Arial, sans-serif;
+	letter-spacing: 0.1em;
+}
+
+#filter {
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+}
+
+#filter-button {
+	display: block;
+	margin: 20px auto;
+	width: 140px;
+	opacity: 0.5;
+	font-size: 0.9em;
+}
+
+#info-button {
+	display: none;
+}
+
+#nav {
+	width: 100%;
+	height: 3em;
+	position: relative;
+	background-color: rgba(0, 0, 0, 0.5);
+	z-index: 2;
+}
+
+#nav h1 {
+	color: #FFFFFF;
+}
+
+#theme-button {
+	width: 50em;
+	text-align: center;
+}
+
+#help {
+	top: -40.2px;
+	padding: 0.5em;
+	cursor: pointer;
+	float: left;
+	font-size: 0.9em;
+}
+
+#main-container {
+	width: 100%;
+	position: absolute;
+	top: 0;
+	bottom: 0em;
+	overflow: hidden;
+	z-index: 0;
+	background-image: url(../imgs/1.jpg);
+	background-size: cover;
+	transition: background 0.5s ease;
+}
+
+#footer, #footer-tooltip {
+	width: 100%;
+	height: 10em;
+	position: absolute;
+	bottom: 0;
+}
+
+#footer {
+	z-index: 2;
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+#footer-tooltip {
+	z-index: 3;
+}
+
+#mask {
+	width: calc(100% - 13em);
+	height: 7em;
+	overflow: hidden;
+}
+
+#footer ol {
+	width: 100%;
+	height: 50em;
+	text-align: center;
+	overflow-x: scroll;
+	white-space: nowrap;
+}
+
+#footer ol li {
+	width: 12.5em;
+	height: 7em;
+	display: inline-block;
+	margin: 0 4px 0 0;
+	background-size: cover;
+	background-repeat: no-repeat;
+	cursor: move;
+}
+
+.theme-updater {
+	font-size: 0.9em;
+	font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.scroll-button {
+	padding: 2.7em 1.2em;
+	cursor: pointer;
+	float: left;
+}
+
+#my-form {
+	font-size: 0.8em !important;
+}
+
+#form_dialog {
+	text-align: center;
+}
+
+#form_dialog button {
+	font-size: 0.9em;
+}
+
+input[type="text"] {
+	width: 280px;
+	margin-top: 1.5em;
+	padding: .4em 1em;
+	border: 1px solid #c5c5c5;
+	border-radius: 3px;
+}
+
+label {
+	display: inline-block;
+	width: 125px;
+	font-weight: bold;
+}
+
+.center {
+	text-align: center;
+}
+
+.progress-label {
+	padding-top: .5em;
+	text-align: center;
+}
+
+.ui-progressbar .ui-progressbar-value {
+	margin-top: -25px !important;
+}
+
+.ui-state-highlight p {
+	padding: 1em 0;
+}
+
+.ui-state-highlight span {
+	padding: 0;
+}
+
+#captcha {
+	list-style-type: none;
+	margin: 2em auto;
+	padding: 0;
+	width: 204px;
+}
+
+#captcha::after {
+	content: '';
+	display: table;
+	clear: both;
+}
+
+#captcha li {
+	float: left;
+	margin: 1px;
+	width: 60px;
+	height: 60px;
+}
+
+#captcha li img {
+	width: 60px;
+	height: 60px;
+	cursor: move;
+}
+
+#dialog-link {
+	text-align: center;
+}
+
+#main {
+	width: 500px;
+	margin: 0 auto;
+}
+
+#progressbar {
+	width: 500px;
+	margin: 200px auto 2em auto;
+}
+
+#province-button {
+	width: 280px;
+}
+
+#stupid-label {
+	margin-top: 2em;
+}
+
+#splash {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	background: #eee;
+	z-index: 4;
+	text-align: center;
+}
+
+#splash img {
+	display: none;
+	margin: auto;
+  position: absolute;
+  top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	width: 500px;
+}
+
+#download-tooltip {
+	position: absolute;
+	top: 16px;
+	right: 5px;
+	outline: 0;
+}
