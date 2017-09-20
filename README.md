@@ -6,6 +6,7 @@ animations, themes, and default and custom widgets.
 
 NOTE: This is a course project.
 <br>
+<br>
 
 **Prerequisites**  
 
