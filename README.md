@@ -1,23 +1,32 @@
-**CMPT 470 Group 9 Tech Evaluation Demo**  
+**jQuery Gallery Demo**
 
 This is a wallpaper gallery demo made with jQuery and jQuery UI. It demonstrates
 the major features of DOM manipulation, event handling, ajax, effects and
 animations, themes, and default and custom widgets.  
 
-**Getting Started**  
-
-The project is configured by vagrant with the help of Chef and VirtualBox.
-After prerequisites are met, simply run "vagrant up" then access 
-http://localhost:8080/ from the browser to display the demo site.  
+NOTE: This is a course project.
 
 **Prerequisites**  
 
 - Vagrant can be acquired from: https://www.vagrantup.com/
 - VirtualBox can be acquired from: https://www.virtualbox.org/  
 
+1. Install VirtualBox. You can do this in Windows, OSX, or Linux. In Ubuntu, this can by done by installing the package virtualbox (or virtualbox-qt if you want the GUI tools too).
+
+2. Install Vagrant. In Ubuntu, install the vagrant package.
+
+
+**Getting Started**  
+
+The project is configured by vagrant with the help of Chef and VirtualBox.
+
+After prerequisites are met, simply run:
+
+1. Download this repo
+2. `vagrant up`
+3. http://localhost:8080 to see the page on browser
+
+
 **Contributors**  
 
-Lily Doo  - ldoo@sfu.ca  
-Melissa Wang - mmw11@sfu.ca  
-Wei Wang - wwa53@sfu.ca  
-Xue Han - hanxueh@sfu.ca
+Lily Doo - Melissa Wang - Shelly (Xue) Han - Wei Wang
