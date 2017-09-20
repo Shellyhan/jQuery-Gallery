@@ -5,6 +5,7 @@ the major features of DOM manipulation, event handling, ajax, effects and
 animations, themes, and default and custom widgets.  
 
 NOTE: This is a course project.
+<br>
 
 **Prerequisites**  
 
@@ -14,7 +15,7 @@ NOTE: This is a course project.
 1. Install VirtualBox. You can do this in Windows, OSX, or Linux. In Ubuntu, this can by done by installing the package virtualbox (or virtualbox-qt if you want the GUI tools too).
 
 2. Install Vagrant. In Ubuntu, install the vagrant package.
-
+<br>
 
 **Getting Started**  
 
@@ -25,7 +26,7 @@ After prerequisites are met, simply run:
 1. Download this repo
 2. `vagrant up`
 3. http://localhost:8080 to see the page on browser
-
+<br>
 
 **Contributors**  
 
